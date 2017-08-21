@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>TextToDenk</title>
+<script src="script.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <script type="text/javascript">
+  function randomImg1() {
+      var myImages1 = new Array();
+      myImages1[1] = "meme1.jpg";
+      myImages1[2] = "meme2.png";
+      myImages1[3] = "meme3.jpg";
+      myImages1[4] = "meme4.jpg";
+      myImages1[5] = "meme5.jpg";
+      myImages1[6] = "meme6.jpg";
+      myImages1[7] = "meme7.jpg";
+      myImages1[8] = "meme8.jpg";
+      myImages1[9] = "meme9.jpg";
+      myImages1[10] = "meme10.jpg";
+      myImages1[11] = "meme11.jpg";
+      myImages1[12] = "meme12.jpg";
+      myImages1[13] = "meme13.jpg";
+      myImages1[14] = "meme14.jpg";
+      myImages1[15] = "meme15.jpg";
+      myImages1[16] = "meme16.jpg";
+      myImages1[17] = "meme17.jpg";
+      myImages1[18] = "meme18.jpg";
+      myImages1[19] = "meme19.jpg";
+      myImages1[20] = "meme20.jpg";
+      myImages1[21] = "meme21.jpg";
+      myImages1[22] = "meme22.jpg";
+      myImages1[23] = "meme23.png";
+      myImages1[24] = "meme24.jpg";
+      myImages1[25] = "meme25.jpg";
+      var rnd = Math.floor(Math.random() * myImages1.length);
+      if (rnd == 0) {
+              rnd = 1;
+      }
+      document.write('<img class="who" src="' + myImages1[rnd] + '">');
+  }
+  </script>
+  <center>
+<div class="box">
+<h1>TextToDenk</h1>
+<p>Simply type any normal text and we will convert it to a Denk Meme</p>
+<form>
+<input type="text" name="NormalText" placeholder="Normal Text">
+        <img id="bigpic" src="meme1.jpg" style="display:none;" />
+<input  onclick="randomImg1()" type="submit" value="Memeify this!">
+</form>
+</center>
+</body>
+</html>

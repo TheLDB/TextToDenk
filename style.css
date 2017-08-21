@@ -1,0 +1,23 @@
+html, body {
+  margin: 0;
+  background: url('wallpaper.png');
+}
+.box {
+  border-radius: 15px;
+  padding: 5px;
+  background: white;
+  text-align: center;
+  top: 10%;
+  left: 35%;
+  right: 35%;
+  position: absolute;
+  height: 50%;
+  font-family: sf;
+}
+input {
+  border-radius: 5px;
+}
+@font-face {
+  font-family: sf;
+  src: url('sanfran.otf');
+}
